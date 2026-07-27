@@ -8,12 +8,12 @@
     <style>
       :root {
         color-scheme: light;
-        --ink: #26302a;
-        --muted: #647168;
-        --paper: #fbfaf5;
-        --line: #dce3d8;
-        --leaf: #326554;
-        --sun: #f5c97e;
+        --ink: #4b415f;
+        --muted: #695f73;
+        --paper: #ffffff;
+        --line: rgba(75, 65, 95, 0.14);
+        --accent: #735f9b;
+        --accent-soft: rgba(215, 194, 250, 0.28);
       }
 
       * { box-sizing: border-box; }
@@ -39,7 +39,7 @@
         height: 7px;
         margin-bottom: 34px;
         border-radius: 999px;
-        background: var(--sun);
+        background: var(--accent);
       }
 
       h1, h2 { font-weight: 400; letter-spacing: -0.025em; }
@@ -61,7 +61,7 @@
 
       h2 {
         margin: 0 0 12px;
-        color: var(--leaf);
+        color: var(--accent);
         font-size: 1.45rem;
       }
 
@@ -70,12 +70,12 @@
       .promise {
         margin: 42px 0;
         padding: 24px 28px;
-        border-left: 4px solid var(--sun);
-        background: #f3f5ed;
+        border-left: 3px solid var(--accent);
+        background: var(--accent-soft);
         font-size: 1.04rem;
       }
 
-      a { color: var(--leaf); text-underline-offset: 3px; }
+      a { color: var(--accent); text-underline-offset: 3px; }
 
       footer {
         margin-top: 72px;
